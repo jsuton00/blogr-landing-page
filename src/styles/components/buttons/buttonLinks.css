@@ -1,0 +1,52 @@
+.btn-link {
+	width: 100%;
+	padding: 0.4em 1.5rem;
+	border-radius: 1.5rem;
+	box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.17);
+}
+
+.sign-up-btn-link-default {
+	border: 0.0625rem solid #fff;
+	background-color: #fff;
+	color: #ff4d58;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.sign-up-btn-link-default:hover,
+.sign-up-btn-link-default:focus {
+	border: 0.0625rem solid #ff7a85;
+	background-color: #ff7a85;
+	color: #fff;
+}
+
+.login-btn-link-default {
+	border: none;
+	background-color: transparent;
+	box-shadow: none;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.login-btn-link-default:hover,
+.login-btn-link-default:focus {
+	border: 0.0625rem solid #fff;
+	color: #fff;
+}
+
+.learn-more-btn-link-default {
+	border: 0.0625rem solid #fff;
+	background-color: transparent;
+	box-shadow: none;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.learn-more-btn-link-default:hover,
+.learn-more-btn-link-default:focus {
+	border: 0.0625rem solid #fff;
+	background-color: #fff;
+	color: #ff4d58;
+}
