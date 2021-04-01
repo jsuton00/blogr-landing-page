@@ -33,3 +33,17 @@ export const useToggleDropdown = (toggleValue) => {
 
 	return [isOpen, toggleDropdown];
 };
+
+export const useToggleNavMenu = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const openMenu = () => {
+		return setIsOpen(!isOpen);
+	};
+
+	const closeMenu = (open) => {
+		return open === true && setIsOpen(false);
+	};
+
+	return [isOpen, openMenu, closeMenu];
+};
