@@ -1,20 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavMenu } from '../mobile/NavMenu';
 import NavLinksMenu from './NavLinksMenu';
 import { NavBurgerButton } from '../../Buttons/NavToggleButton';
 import '../../../styles/components/navigation/navigation.css';
+import { renderNavMenu } from '../../../utils/renderFunctions';
 
 const Navbar = (props) => {
 	const { width, open, openMenu, closeMenu } = props;
-
-	const renderNavMenu = () => {
-		if (width < 925 && open === true) {
-			return <NavMenu />;
-		} else if (width >= 925 && open === true) {
-			return <NavLinksMenu />;
-		}
-	};
 
 	return (
 		<div id="navigation" className="nav navbar nav-header">
@@ -30,9 +22,9 @@ const Navbar = (props) => {
 					buttonValue={open}
 				/>
 			) : (
-				<NavLinksMenu />
+				<NavLinksMenu width={width} />
 			)}
-			{renderNavMenu()}
+			{renderNavMenu(width, open, closeMenu)}
 		</div>
 	);
 };

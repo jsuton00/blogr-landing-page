@@ -1,0 +1,23 @@
+.nav-menu-button {
+	width: 100%;
+	padding: 0.25rem 1rem;
+	border: none;
+	background-color: transparent;
+}
+
+.nav-menu-button:hover,
+.nav-menu-button:focus {
+	border: none;
+}
+
+.nav-menu-icon {
+	width: 100%;
+}
+
+.nav-menu-btn-icon svg {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	font-stretch: expanded;
+	color: #fff;
+}

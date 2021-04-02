@@ -41,8 +41,10 @@ export const useToggleNavMenu = () => {
 		return setIsOpen(!isOpen);
 	};
 
-	const closeMenu = (open) => {
-		return open === true && setIsOpen(false);
+	const closeMenu = () => {
+		if (isOpen !== false) {
+			return setIsOpen(false);
+		}
 	};
 
 	return [isOpen, openMenu, closeMenu];

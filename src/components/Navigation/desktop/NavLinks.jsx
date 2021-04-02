@@ -13,8 +13,9 @@ export const NavLinkButton = (props) => {
 		if (e.target.value === menuRef.current.value) {
 			handleToggle(e.target.value);
 		}
-
-		return history.push(`/${link}`);
+		return history.push({
+			pathname: `/${link}`,
+		});
 	};
 
 	return (

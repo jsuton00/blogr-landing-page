@@ -1,15 +1,12 @@
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+import '../../styles/components/buttons/navMenuButton.css';
 
 export const NavBurgerButton = (props) => {
-	const { buttonValue, openMenu, closeMenu } = props;
+	const { buttonValue, openMenu } = props;
 
-	const handleToggle = () => {
-		if (buttonValue === false) {
-			openMenu();
-		} else {
-			closeMenu(buttonValue);
-		}
+	const handleClick = (e) => {
+		return openMenu(e.target.value);
 	};
 
 	return (
@@ -18,9 +15,11 @@ export const NavBurgerButton = (props) => {
 				id="nav-burger-button"
 				name="nav-burger-button"
 				type="button"
-				onClick={handleToggle}
+				className="nav-menu-button"
+				onClick={handleClick}
+				value={buttonValue}
 			>
-				<span className="nav-button-icon">
+				<span className="nav-menu-btn-icon">
 					{buttonValue === true ? <AiOutlineClose /> : <FaBars />}
 				</span>
 			</button>
