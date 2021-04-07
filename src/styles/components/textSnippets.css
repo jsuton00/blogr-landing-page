@@ -1,0 +1,29 @@
+.text-snippets-row {
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	margin: auto 0;
+}
+
+.text-snippets-container {
+	width: 100%;
+	padding: 1rem 2rem;
+}
+
+.text-snippets-title {
+	width: 100%;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	color: #1f3f5b;
+	padding: 1rem 0.625rem;
+}
+
+.text-snippets-text {
+	width: 100%;
+	color: #4b5863;
+}
+
+.mobile .text-snippets-container * {
+	color: #fff;
+}

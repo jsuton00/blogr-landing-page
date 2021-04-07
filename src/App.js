@@ -11,7 +11,7 @@ const App = () => {
 			<ViewportProvider>
 				<Header open={isOpen} openMenu={openMenu} closeMenu={closeMenu} />
 			</ViewportProvider>
-			<main id="main" className="app-main">
+			<main id="main" className="app-main container-fluid">
 				<PageRoutes />
 			</main>
 		</div>

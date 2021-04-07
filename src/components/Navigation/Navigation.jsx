@@ -42,7 +42,7 @@ export const useToggleNavMenu = () => {
 	};
 
 	const closeMenu = () => {
-		if (isOpen !== false) {
+		if (isOpen === true) {
 			return setIsOpen(false);
 		}
 	};

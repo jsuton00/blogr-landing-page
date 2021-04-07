@@ -2,12 +2,14 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	max-width: 100%;
 	height: 3.75rem;
 	padding: 0.25rem 0.5rem;
+	margin: 0 auto;
 }
 
 .nav-brand-section {
-	flex-basis: 18%;
+	flex-basis: 12%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,7 +19,7 @@
 
 .app-title {
 	width: 100%;
-	padding: 1rem 0.5rem;
+	padding: 0.25rem 0;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 2.1rem;
 	font-weight: 500;
@@ -38,7 +40,7 @@
 }
 
 .nav-links-section {
-	flex-basis: 82%;
+	flex-basis: 88%;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
